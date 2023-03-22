@@ -9,4 +9,14 @@ public class FunRestController {
     public String sayHello() {
         return "Hello World";
     }
+
+    @GetMapping("/cats")
+    public String getCatMessage() {
+        return "Cats Love Me";
+    }
+
+    @GetMapping("/fortune")
+    public String getTodaysFortune() {
+        return "Cats says today is the day";
+    }
 }
